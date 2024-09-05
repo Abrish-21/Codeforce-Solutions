@@ -26,7 +26,7 @@ def save_submissions(submissions, directory):
         problem_name = submission['problem']['name'].replace(' ', '_')
         contest_id = submission['contestId']
         index = submission['problem']['index']
-        file_path = os.path.join(directory, f"{contest_id}_{index}_{problem_name}.cpp")
+        file_path = os.path.join(directory, f"{contest_id}_{index}_{problem_name}.py")
         
         # Only save if the file does not already exist
         if not os.path.isfile(file_path):
